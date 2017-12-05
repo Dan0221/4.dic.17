@@ -18,11 +18,8 @@ Buscar persona: <input type = "type" id="nombre" onkeyup = "mostrarUsuario(this.
 
     var resultado = document.getElementById("info");
 
-    function mostrarUsuario(nombre)
-    {
-
+    function mostrarUsuario(nombre){
         var xmlhttp;
-
         if (window.XMLHttpRequest){
             xmlhttp = new XMLHttpRequest();
         }else{
