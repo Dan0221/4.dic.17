@@ -1,16 +1,14 @@
 <?php
 
-$host="localhost"; 
-$username="root";  
+$host="127.0.0.1"; 
+$username="kmiloarguello";  
 $password="";
-$db_name="employees_assign"; 
+$db_name="danie"; 
 
- $con = mysqli_connect($host, $username, $password); 
+$con = new mysqli($host, $username, $password, $db_name);
 
-if (mysqli_connect_errno ())
-{
-    echo "Error" . mysqli_connect_error();
+if ($connect->connect_error){
+  echo "Failed to connect to MySQL: " . $connect->connect_error;
 }
-
 
 ?>
